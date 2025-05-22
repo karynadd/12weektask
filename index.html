@@ -21,6 +21,10 @@
 		.container2 {height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 60px 20px; text-align: center; backdrop-filter: blur(2px);}
 		h1 {font-size: 70px; line-height: 1.2; text-shadow: 0 0 15px rgba(255, 215, 0, 0.3);}
 		h1 {font-size: 70px; line-height: 1.2; text-shadow: 0 0 15px rgba(255, 215, 0, 0.3);}
+		@keyframes fadeInUptext {0% {opacity: 0; transform: translateY(30px);} 100% {opacity: 1; transform: translateY(0);}}
+		.fade-in-text {opacity: 0; animation: fadeInUptext 0.8s forwards;}
+		.fade-in-text.delay-1 {animation-delay: 0.2s;}
+		.fade-in-text.delay-2 {animation-delay: 0.4s;}
 		.h1add {font-size: 90px; line-height: 1.2; text-shadow: 0 0 15px rgba(255, 215, 0, 0.3);}
 		.cta-button {display: inline-block; margin-top: 70px; padding: 12px 32px; background: #f5c944; color: #222;font-size: 20px; text-decoration: none; border-radius: 30px; box-shadow: 0 0 20px 5px rgba(245, 201, 68, 0.5); transition: all 0.3s ease;} 
 		.cta-button:hover {box-shadow: 0 0 30px 10px rgba(245, 201, 68, 0.8); background-color: #ffe066;}
@@ -52,14 +56,14 @@
 			<img src="candle.gif" class="candle candle5">
 			<img src="candle.gif" class="candle candle6">
   
-			<h1>DO YOU BELIVE</h1>
-			<h1 class="h1add">TAROT?</h1>
+			<h1 class="fade-in-text">DO YOU BELIVE</h1>
+			<h1 class="h1add fade-in-text">TAROT?</h1>
 			<a href="#love" class="cta-button">Start Reading →</a>
 		</section>
 
 		<section id="love" class="container2">
-			<h1>LOVE AND RELATIONSHIPS</h1>
-			<p class="subtitle">What do the cards say about your love life?</p>
+			<h1 class="fade-in-text">LOVE AND RELATIONSHIPS</h1>
+			<p class="subtitle fade-in-text">What do the cards say about your love life?</p>
 
 			<div class="cards">
 				<img src="cardback.png" alt="Tarot Card" class="card1" onclick="showLoveResult()">
@@ -71,8 +75,8 @@
 		</section>
 
 		<section id="resultSection" class="container2" style="display: none;">
-			<h1>LOVE AND RELATIONSHIPS</h1>
-			<p class="subtitle">Choose one card below</p>
+			<h1 class="fade-in-text">LOVE AND RELATIONSHIPS</h1>
+			<p class="subtitle fade-in-text">Choose one card below</p>
 			<div class="result-content-side">
 			  <img src="QueenOfSwords.png" alt="Queen of Swords" class="cardresult">
 
@@ -109,8 +113,8 @@
 		</section>
 
 		<section id="career" class="container2">
-			<h1>CAREER & FINANCES</h1>
-			<p class="subtitle">What do the cards say about your career?</p>
+			<h1 class="fade-in-text">CAREER & FINANCES</h1>
+			<p class="subtitle fade-in-text">What do the cards say about your career?</p>
 
 			<div class="cards">
 				<img src="cardback.png" alt="Tarot Card" class="card1" onclick="showCareerResult()">
@@ -122,8 +126,8 @@
 		</section>
 
 		<section id="careerResult" class="container2" style="display: none;">
-			<h1>Career & Finances</h1>
-			<p class="subtitle">Choose one card below</p>
+			<h1 class="fade-in-text">Career & Finances</h1>
+			<p class="subtitle fade-in-text">Choose one card below</p>
 			<div class="result-content-side">
 			  <img src="TheMoon.png" alt="The Moon" class="cardresult">
 
@@ -160,8 +164,8 @@
 		</section>
 
 		<section id="personal" class="container2">
-			<h1>PERSONAL GROWTH</h1>
-			<p class="subtitle">What do the cards say about your personal growth?</p>
+			<h1 class="fade-in-text">PERSONAL GROWTH</h1>
+			<p class="subtitle fade-in-text">What do the cards say about your personal growth?</p>
 
 			<div class="cards">
 				<img src="cardback.png" alt="Tarot Card" class="card1" onclick="showPersonalResult()">
@@ -173,8 +177,8 @@
 		</section>
 
 		<section id="personalResult" class="container2" style="display: none;">
-			<h1>Personal Growth</h1>
-			<p class="subtitle">Choose one card below</p>
+			<h1 class="fade-in-text">Personal Growth</h1>
+			<p class="subtitle fade-in-text">Choose one card below</p>
 			<div class="result-content-side">
 			  <img src="TheWorld.png" alt="The World" class="cardresult">
 
